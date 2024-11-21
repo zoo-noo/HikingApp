@@ -68,7 +68,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:hint="몸무게"
+        android:hint="몸무게 입력"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -127,5 +127,63 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/location_tv"
         app:layout_constraintTop_toTopOf="@id/location_tv" />
+
+    <TextView
+        android:id="@+id/experience_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:text="경력:"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location_tv" />
+
+    <Spinner
+        android:id="@+id/experience_select"
+        android:layout_width="305dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:entries="@array/experience_items"
+        app:layout_constraintStart_toEndOf="@+id/experience_tv"
+        app:layout_constraintTop_toTopOf="@+id/experience_tv" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="다음"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="639dp" />
+
+    <CheckBox
+        android:id="@+id/stiff_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:text="경사도"
+        app:layout_constraintStart_toEndOf="@+id/prefer_tv"
+        app:layout_constraintTop_toTopOf="@+id/prefer_tv" />
+
+    <CheckBox
+        android:id="@+id/distance_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:text="거리"
+        app:layout_constraintStart_toEndOf="@+id/stiff_checkbox"
+        app:layout_constraintTop_toTopOf="@+id/stiff_checkbox" />
+
+    <TextView
+        android:id="@+id/prefer_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:text="선호코스"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/experience_tv" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
