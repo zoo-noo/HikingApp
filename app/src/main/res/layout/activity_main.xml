@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="160dp"
         android:backgroundTint="#FB0505"
-        android:text="정보입력"
+        android:text="등산하기"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

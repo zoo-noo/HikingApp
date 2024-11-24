@@ -12,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HikingApp"
         tools:targetApi="31">
-        <activity android:name=".Information"></activity>
+        <activity
+            android:name=".Map_Recommend"
+            android:exported="false" />
+        <activity android:name=".Information" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
