@@ -7,4 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".Map_Recommend">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/course_select"
+        android:layout_width="415dp"
+        android:layout_height="319dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
